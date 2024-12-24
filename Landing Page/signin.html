@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SignIn</title>
+        <link rel="stylesheet" href="style/css.css" />
+        <link rel="icon" href="assets/imgs/sport.png" />
+
+
+    <style>
+
+      body{
+        background-color: rgb(211, 44, 29);
+        background-image: url("./assets/imgs/3.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+      }
+        header{
+          height: 10vh;
+        }
+        .login{
+            height: 400px;
+            width: 500px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 100px auto;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .login a{
+          text-decoration: none;
+          color: white;
+          margin: 10px;
+          display: block;
+          font-size: 14px;
+        }
+
+        .login a:hover{
+          color: #aca9a9;
+        }
+        h2{
+            margin: 5px 10px;
+        }
+        form{
+            text-align: center;
+            font-weight: 500;
+            padding-top: 60px;text-wrap: wrap;
+        }
+        form input{
+            width: 50%;
+            border-radius: 20px;
+            border-color: none;
+            height: 30px;
+            border: none;
+        }
+        form input :last-child{
+            background-color: blue;
+        }
+        form label{
+            font-size: 12px;
+            text-align: left;
+        }
+        button{
+            height: 30px;
+            margin: 20px auto;
+            font-size: 14px;
+            text-transform: capitalize;
+            border-radius: 20px;
+            background-color: black;
+            color: bisque;
+        }
+        #ren{
+            background-color: rgb(206, 19, 19);
+            color: aliceblue;
+
+        }
+        #rem{
+            height: 10px;
+            display: inline;
+        }
+        #ren:hover{
+            background-color: rgb(54, 54, 148);
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <header>
+        <nav>
+          <a href="" class="logo">
+            <img src="assets/imgs/sport.png" alt="" />Nike</a
+          >
+  
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="customerReview.html">Customer Reviews</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+          <div class="newCl"></div>
+          <!-- <a href="signin.html"><button class="signin btn">SingIn</button></a> -->
+        </nav>
+  
+    </header>
+
+
+    <div class="login">
+        <h2>LOGIN</h2>
+        <form action="">
+            <label for="name">Name/Emaile</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="pass">PAssword</label><br>
+            <input type="password" name="pass" id="sass"><br>
+            <input type="checkbox" name="" id="rem" >
+            <label for="rem">Remember Me</label><br>
+            <input type="submit" name="" id="ren" value="login"><br>
+            <a href="registration.html">Don't have Account?</a>
+            <a href="">Forget Password?</a>
+        </form>
+    </div>
+
+
+          <!-- Footer Section -->
+          <footer>
+            <div class="footer">
+              <div>
+                <h4>About Nike</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Sustainability</a>
+              </div>
+              <div>
+                <h4>Help & Support</h4>
+                <a href="#">Customer Service</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQs</a>
+              </div>
+              <div>
+                <h4>Shop</h4>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+              </div>
+              
+              <div>
+                <h4>Stay Connected</h4>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+                <p class="copyright">© 2024 Nike, Inc.</p>
+              </div>
+            </div>
+          </footer>
+          
+
+</body>
+</html>

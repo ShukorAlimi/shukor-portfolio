@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <style>
+
+
+        .gridContainer {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            grid-template-areas: 
+                "header  header   header"
+                "nav  nav   nav"
+                "aside1  main   aside2"
+                "footer  footer   footer"
+            
+            ;
+
+        }
+
+        header{
+            grid-area: header;
+            background-color: #434242;
+            max-height: 120px;
+            min-height: 100px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        nav{
+            grid-area: nav;
+            background-color: #e6c003;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+        
+        .aside1{
+            grid-area: aside1;
+            background-color: #23bd0e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .aside2{
+            grid-area: aside2;
+            background-color: #23bd0e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        main{
+            grid-area: main;
+            background-color: #0bbea3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            height:400px
+        }
+        footer{
+            grid-area: footer;
+            background-color: #434242;
+            padding: 20px;
+            border-radius: 10px;
+            color:white;
+        }
+     
+        p{
+            background-color: #434242;
+            line-height: 150px;
+            border-radius: 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="gridContainer">
+        <header>Header</header>
+        <nav>Navigation</nav>
+        <div class="aside1">Frist Aside </div>
+        <main><p>Main Texts</p></main>
+        <div class="aside2">Second Aside</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

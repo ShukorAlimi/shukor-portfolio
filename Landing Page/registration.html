@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resgister</title>
+    <link rel="stylesheet" href="style/css.css" />
+
+    <style>
+      #a {
+        width: 120px;
+        margin: 30px;
+        align-items: start;
+        display: flex;
+      }
+      #b {
+        width: 120px;
+        margin: 30px;
+        align-items: end;
+        display: flex;
+      }
+
+      section {
+        border: 1px solid #ccc;
+        width: 520px;
+        margin: 50px auto;
+        padding: 50px 20px;
+        border-radius: 15px;
+        background-color: white;
+      }
+
+      .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .title h2 {
+        text-align: center;
+        padding: 10px;
+        font-family: "Segoe UI";
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .title img {
+        width: 80px;
+      }
+      .loginForm input {
+        width: 100%;
+        height: 30px;
+        border: 0.5px solid #ccc;
+        font-weight: 500;
+        padding: 7px 0;
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      section p {
+        border-bottom: 1px solid #ccc;
+        margin: 10px;
+        line-height: 0.1em;
+        text-align: center;
+        color: #ccc;
+      }
+      span {
+        background-color: white;
+        padding: 10px;
+      }
+
+      .socialMedia {
+        margin: 20px;
+      }
+
+      .socialMedia input {
+        background: #dc1f02;
+        color: white;
+        width: 100%;
+        margin: 10px;
+        padding: 10px 0;
+        border-radius: 10px;
+        border: 0.5px solid #ccc;
+      }
+
+      .socialMedia input:hover {
+        background-color: #7f7e7e;
+        cursor: pointer;
+      }
+
+      .singUp input:hover {
+        background-color: #444;
+        cursor: pointer;
+      }
+
+      .cityState {
+        display: flex;
+        gap: 10px;
+      }
+
+      label {
+        position: relative;
+        bottom: -10px;
+        right: -8px;
+      }
+
+      header {
+        height: 10vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="" class="logo">
+          <img src="assets/imgs/sport.png" alt="" />Nike</a
+        >
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="customerReview.html">Customer Reviews</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <a href="signin.html"><button class="signin btn">SingIn</button></a>
+      </nav>
+    </header>
+
+    <section>
+      <div class="title">
+        <img src="./assets/imgs/nike.png" alt="" />
+        <h2>- Nike Registration Form -</h2>
+      </div>
+
+      <div class="loginForm">
+        <form action="">
+          <label for="">Name: </label>
+          <input type="text" placeholder="  Name" />
+          <label for="">LastName: </label>
+          <input type="text" placeholder="  LastName" />
+          <label for="">Gmail: </label>
+          <input type="text" placeholder="  Gmail" />
+          <label for="">Street_Address: </label>
+          <input type="text" placeholder=" Address" />
+
+          <div class="cityState">
+            <div>
+              <label for="">City: </label>
+              <input id="city_state" type="text" placeholder=" City" />
+            </div>
+
+            <div>
+              <label for="">State: </label>
+              <input id="city_state" type="text" placeholder=" State" />
+            </div>
+          </div>
+
+          <label for="">Postal / Zip Code: </label>
+          <input id="city_state" type="text" placeholder=" Zip/Postal Code" />
+          <label for="">State: </label>
+          <input id="city_state" type="text" placeholder=" State" />
+        </form>
+      </div>
+
+      <div class="socialMedia">
+        <form action="">
+          <input type="submit" value="Sign Up" />
+          <p><span> or</span></p>
+          <input type="submit" value="Continue with Gmail" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer">
+        <div>
+          <h4>About Nike</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Sustainability</a>
+        </div>
+        <div>
+          <h4>Help & Support</h4>
+          <a href="#">Customer Service</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+        </div>
+        <div>
+          <h4>Stay Connected</h4>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+          <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+          <p class="copyright">© 2024 Nike, Inc.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
